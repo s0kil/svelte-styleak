@@ -1,6 +1,5 @@
-function styleak(node) {
-  let styles = ""; // `styles` will contain all CSS `$$props`
-  let props = $$props; // https://svelte.dev/docs#Attributes_and_props
+export default function styleak(props) {
+  let styles = ""; // `styles` will contain the CSS `properties`
   // Iterate Over `props` object
   for (let key in props) {
     // If `props` `key` does not start with '!' `continue` iteration;
@@ -10,11 +9,5 @@ function styleak(node) {
     // Append `property:value;` to `result`;
     styles += property + ":" + props[key] + ";";
   }
-  // `style={styleak()}`
-  if (!node) return styles;
-  // `use:styleak`
-  else node.setAttribute("style", styles);
+  return styles;
 }
-
-// export default styleak;
-module.exports = styleak;

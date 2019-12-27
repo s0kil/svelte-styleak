@@ -16,7 +16,11 @@
 
 <Text textContent="Hello!" />
 
-<Text textContent="See Ya Later!" !color="blue" !background-color="red" />
+<Text
+  textContent="See Ya Later!"
+  !color="blue"
+  !background-color="red"
+/>
 ```
 
 ### `Text.svelte`
@@ -36,9 +40,5 @@
   }
 </style>
 
-<p use:styleak>{textContent}</p>
-
-<!-- OR -->
-
-<p style="{styleak()}">{textContent}</p>
+<p style={styleak($$props)}>{textContent}</p>
 ```
