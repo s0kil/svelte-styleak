@@ -1,6 +1,11 @@
 # styleak : Svelte Style Leak
 
+![npm (scoped)](https://img.shields.io/npm/v/@s0kil/svelte-styleak?style=for-the-badge)
+![npm bundle size](https://img.shields.io/bundlephobia/min/@s0kil/svelte-styleak?style=for-the-badge)
+
 ## Usage
+
+`npm i -D @s0kil/svelte-styleak`
 
 ### `App.svelte`
 
@@ -11,18 +16,14 @@
 
 <Text textContent="Hello!" />
 
-<Text
-  textContent="See Ya Later!"
-  !color="blue"
-  !background-color="red"
-/>
+<Text textContent="See Ya Later!" !color="blue" !background-color="red" />
 ```
 
 ### `Text.svelte`
 
 ```html
 <script>
-  import styleak from "svelte-styleak";
+  import styleak from "@s0kil/svelte-styleak";
 
   export let textContent = "";
 </script>
