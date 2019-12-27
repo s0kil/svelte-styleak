@@ -1,7 +1,7 @@
 {
   "name": "@s0kil/svelte-styleak",
   "description": "Pass CSS To Child Component",
-  "version": "1.1.0",
+  "version": "2.1.0",
   "author": "s0kil",
   "bugs": "https://github.com/s0kil/svelte-styleak/issues",
   "homepage": "https://github.com/s0kil/svelte-styleak#readme",
