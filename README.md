@@ -40,5 +40,9 @@
   }
 </style>
 
-<p style={styleak($$props)}>{textContent}</p>
+<p style="{styleak($$props)}">{textContent}</p>
 ```
+
+### Demo
+
+[styleak in svelte repl](https://svelte.dev/repl/26f75bb6b349461bb780f056635687cb)
